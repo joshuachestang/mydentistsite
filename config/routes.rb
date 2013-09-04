@@ -1,4 +1,14 @@
 Ghwebsite::Application.routes.draw do
+  get '/about'
+  get '/drug-treatment'
+  get '/weight-loss'
+  get '/immigration-physicals'
+  get '/contact'
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
