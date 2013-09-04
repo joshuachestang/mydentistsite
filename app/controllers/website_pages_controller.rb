@@ -1,4 +1,7 @@
 class WebsitePagesController < ApplicationController
+  def home
+  end
+
   def about
   end
 
