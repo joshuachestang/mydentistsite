@@ -1,9 +1,12 @@
 Ghwebsite::Application.routes.draw do
-  get "website_pages/about"
-  get "website_pages/drug_treatment"
-  get "website_pages/weight_loss"
-  get "website_pages/immigration_physicals"
-  get "website_pages/contact"
+
+  get "website_pages/home" => "website_pages#home"
+  get "website_pages/about" => "website_pages#about"
+  get "website_pages/drug_treatment" => "website_pages#drug_treatment"
+  get "website_pages/weight_loss" => "website_pages#weight_loss"
+  get "website_pages/immigration_physicals" => "website_pages#immigration_physicals"
+  get "website_pages/contact" => "website_pages#contact"
+
 
 
 
@@ -13,7 +16,7 @@ Ghwebsite::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'webesite_pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
