@@ -1,9 +1,9 @@
 Ghwebsite::Application.routes.draw do
-  get '/about'
-  get '/drug-treatment'
-  get '/weight-loss'
-  get '/immigration-physicals'
-  get '/contact'
+  get "website_pages/about"
+  get "website_pages/drug_treatment"
+  get "website_pages/weight_loss"
+  get "website_pages/immigration_physicals"
+  get "website_pages/contact"
 
 
 
