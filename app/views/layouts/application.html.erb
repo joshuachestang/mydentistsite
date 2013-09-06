@@ -11,6 +11,7 @@
 	<section class="bck light">
 	<div class="row text center">
 		<nav data-tuktuk="menu" class="column_12 padding text bold">
+				<%= link_to_unless_current 'Home', root_path %>
                 <%= link_to_unless_current 'About', website_pages_about_path %>
                 <%= link_to_unless_current 'Drug Treatment', website_pages_drug_treatment_path %>
                 <%= link_to_unless_current 'Weight Loss', website_pages_weight_loss_path %>
@@ -24,3 +25,5 @@
 
 </body>
 </html>
+
+
