@@ -1,3 +1,7 @@
+#inbox-button, #telephone-button{
+	line-height: 1em;
+}
+
 [data-tuktuk=boxes]{display:-webkit-box;display:-moz-box;display:-ms-box;display:-o-box;display:box;-webkit-box-pack:justify;-moz-box-pack:justify;-ms-box-pack:justify;-o-box-pack:justify;box-pack:justify;overflow:hidden;}
 [data-tuktuk=boxes] > aside,[data-tuktuk=boxes] > section{display:-webkit-box;display:-moz-box;display:-ms-box;display:-o-box;display:box;-webkit-box-orient:vertical;-moz-box-orient:vertical;-ms-box-orient:vertical;-o-box-orient:vertical;box-orient:vertical;}
 [data-tuktuk=boxes] > aside > header,[data-tuktuk=boxes] > section > header,[data-tuktuk=boxes] > aside > footer,[data-tuktuk=boxes] > section > footer,[data-tuktuk=boxes] > aside > div > header,[data-tuktuk=boxes] > section > div > header,[data-tuktuk=boxes] > aside > div > footer,[data-tuktuk=boxes] > section > div > footer{-webkit-box-flex:0;-moz-box-flex:0;-ms-box-flex:0;-o-box-flex:0;box-flex:0;display:block;height:52px;line-height:52px;padding:0 1em}
@@ -14,7 +18,7 @@
 
 .button,button{display:inline-block;border:none;cursor:pointer;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:2.3em;text-align:center;text-decoration:none;outline:none;}
 .button.icon,button.icon{padding:0 .65em}
-.button:not(.icon),button:not(.icon){padding:0 1em;}
+.button:not(.icon),button:not(.icon){padding: 1em;}
 .button:not(.icon) .icon,button:not(.icon) .icon{margin-right:.5em}
 .button.large,button.large{font-size:1.4em}
 .button.small,button.small{font-size:.9em}
