@@ -1,0 +1,53 @@
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript">
+	function initialize() {
+  var myLatlng = new google.maps.LatLng(41.595080,-87.561924);
+  var myLatlng2 = new google.maps.LatLng(41.345757,-88.841013);
+  var mapOptions = {
+    zoom: 8,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Calumet City Office'
+  });
+
+  var marker2 = new google.maps.Marker({
+  	position: myLatlng2,
+  	map: map,
+  	title: 'Ottawa Office'
+  })
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+<style type="text/css">
+	section#practice-location, #map-canvas{
+		height:300px;
+	}
+
+</style>
+
+<section id="practice-location">
+	<div class="row"><div id="map-canvas"></div></div>
+</section>
+<section>
+	<div class="row">
+		<div class="column_6">
+		<h2>Calumet City Office</h2>
+		<p class="location-text">
+1473 Ring Rd. Calumet City, IL 60409
+Phone: 708.862.8156
+Fax: 708.862.8105</p></div>
+		<div class="column_6">
+		<h2>Ottawa Office</h2>
+		<p class="location-text">
+110 E Main Street, Suite 226, Ottawa, IL 61350
+Phone: 815.434.0228</p></div>
+	</div>
+</section>
