@@ -6,7 +6,11 @@
  * Licensed under the MIT, GPL licenses.
  */
 .carousel {
+<<<<<<< HEAD
 	width: 2000%;
+=======
+	width: 100%;
+>>>>>>> 46daf86ada755feb56631e5a08e47c83b2288304
 	position: relative;
 }
 .carousel .carousel-item {
