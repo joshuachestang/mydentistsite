@@ -1,11 +1,11 @@
 Ghwebsite::Application.routes.draw do
 
-  get "website_pages/home" => "website_pages#home"
-  get "website_pages/about" => "website_pages#about"
-  get "website_pages/drug_treatment" => "website_pages#drug_treatment"
-  get "website_pages/weight_loss" => "website_pages#weight_loss"
-  get "website_pages/immigration_physicals" => "website_pages#immigration_physicals"
-  get "website_pages/contact" => "website_pages#contact"
+  get "/home" => "website_pages#home"
+  get "/about" => "website_pages#about"
+  get "/drug_treatment" => "website_pages#drug_treatment"
+  get "/weight_loss" => "website_pages#weight_loss"
+  get "/immigration_physicals" => "website_pages#immigration_physicals"
+  get "/contact" => "website_pages#contact"
 
 
 

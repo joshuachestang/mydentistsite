@@ -12,17 +12,33 @@
 
 <section class="padding bck theme features">
         <div class="row text center book">
-            <div class="column_10 offset_1">
+            <div class="column_12">
                 <h1 class="color default">Welcome to Great Heights Family Medicine</h1>
-                <h3>
+                
+                    <div id="myCarousel" class="carousel slide">
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                      <!-- Carousel items -->
+                      <div class="carousel-inner">
+                        <div class="active item"><%= image_tag("image-test-1.jpg") %></div>
+                        <div class="item"><%= image_tag("image-test-2.jpg") %></div>
+                        <div class="item"><%= image_tag("image-test-3.jpg") %></div>
+                      </div>
+                      <!-- Carousel nav -->
+                      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    </div>
                     <strong>Not Lorem ipsum dolor </strong> lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum nisl sit amet ante placerat adipiscing. 
-                </h3>
+                
             </div>
         </div>
 <br>
         <div class="row text center normal margin-top">
         	 <div class="column_4">
-            	<%= link_to  website_pages_weight_loss_path do %>
+            	<%= link_to  weight_loss_path do %>
 	                <h1 class="icon food"></h1>
 	                <h4 class="text color white">Weight Loss</h4>
                 <% end %>
@@ -31,7 +47,7 @@
             </div>
 
             <div class="column_4">
-                <%= link_to  website_pages_drug_treatment_path do %>
+                <%= link_to  drug_treatment_path do %>
                 	<h1 class="icon group"></h1>
                 	<h4 class="text color white">Drug Treatment</h4>
             	<% end %>
@@ -40,7 +56,7 @@
             </div>
 
             <div class="column_4">
-            	<%= link_to  website_pages_immigration_physicals_path do %>
+            	<%= link_to  immigration_physicals_path do %>
 	                <h1 class="icon flag"></h1>
 	                <h4 class="text color white">Immigration Physicials</h4>
                 <% end %>
@@ -67,7 +83,7 @@
 
 
             <div class="column_4">
-                <a href="<%= website_pages_contact_path %>" class="button large anchor secondary" id="inbox-button"><span class="icon envelope"></span>Send us an <br> inbox message</a>
+                <a href="<%= contact_path %>" class="button large anchor secondary" id="inbox-button"><span class="icon envelope"></span>Send us an <br> inbox message</a>
             </div>
         </div>
     </section>
