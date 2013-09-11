@@ -10,10 +10,10 @@
 <!-- </div> -->
 
 
-<section class="padding bck theme features">
+<section class="padding-bottom padding-top bck theme features">
         <div class="row text center book">
             <div class="column_12">
-                <h1 class="color default">Welcome to Great Heights Family Medicine</h1>
+                <h1 class="color default padding-bottom">Welcome to Great Heights Family Medicine</h1>
                 
                     <div id="myCarousel" class="carousel slide">
                       <ol class="carousel-indicators">
@@ -23,13 +23,13 @@
                       </ol>
                       <!-- Carousel items -->
                       <div class="carousel-inner">
-                        <div class="active item"><%= image_tag("image-test-1.jpg") %></div>
-                        <div class="item"><%= image_tag("image-test-2.jpg") %></div>
-                        <div class="item"><%= image_tag("image-test-3.jpg") %></div>
+                        <div id="carousel-image-wrapper" class="active item"><%= image_tag("image-test-1.jpg", :class => "column_12", :id => "carousel-image") %></div>
+                        <div id="carousel-image-wrapper" class="item"><%= image_tag("image-test-2.jpg", :class => "column_12", :id => "carousel-image") %></div>
+                        <div id="carousel-image-wrapper" class="item"><%= image_tag("image-test-3.jpg", :class => "column_12", :id => "carousel-image") %></div>
                       </div>
                       <!-- Carousel nav -->
-                      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                      <a class="carousel-control-2 left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                      <a class="carousel-control-2 right" href="#myCarousel" data-slide="next">&rsaquo;</a>
                     </div>
                     <strong>Not Lorem ipsum dolor </strong> lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum nisl sit amet ante placerat adipiscing. 
                 
