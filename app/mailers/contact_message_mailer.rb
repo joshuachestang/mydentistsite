@@ -3,6 +3,6 @@ class ContactMessageMailer < ActionMailer::Base
 
    def inbox_message(contact_message)
 	  	@contact_message = contact_message
-	    mail(:from => "yfatoki@great-heights.com", :bcc =>  :subject => "New Message")
+	    mail(:from => "yfatoki@great-heights.com", :subject => "New Message")
 	  end
 end
