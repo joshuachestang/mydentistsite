@@ -1,5 +1,7 @@
 Ghwebsite::Application.routes.draw do
 
+  resources :contact_messages
+
   get "/home" => "website_pages#home"
   get "/about" => "website_pages#about"
   get "/drug_treatment" => "website_pages#drug_treatment"

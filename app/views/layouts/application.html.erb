@@ -19,6 +19,23 @@
 
 
 <%= render "layouts/header" %>
+<% if flash[:notice] %>
+  <p id="flash_notice" class="messages notice"><%= flash[:notice] %></p>
+  <script type="text/javascript">
+    $(function() {
+      $('p#flash_notice').delay(5000).fadeOut('slow');
+    });
+  </script>
+<% end %>
+<% if flash[:alert] %>
+  <p id="flash_errors" class="messages alert"><%= flash[:alert] || flash[:alert] %></p>
+  <script type="text/javascript">
+    $(function() {
+      $('p#flash_errors').delay(5000).fadeOut('slow');
+    });
+  </script>
+<% end %>
+<% flash[:alert] = flash[:alert] = flash[:alert] = nil %>
 
 <%= yield %>
 
