@@ -1,0 +1,33 @@
+<h1>Listing contact_messages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone number</th>
+      <th>Body</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contact_messages.each do |contact_message| %>
+      <tr>
+        <td><%= contact_message.name %></td>
+        <td><%= contact_message.email %></td>
+        <td><%= contact_message.phone_number %></td>
+        <td><%= contact_message.body %></td>
+        <td><%= link_to 'Show', contact_message %></td>
+        <td><%= link_to 'Edit', edit_contact_message_path(contact_message) %></td>
+        <td><%= link_to 'Destroy', contact_message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contact message', new_contact_message_path %>
