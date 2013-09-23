@@ -67,3 +67,9 @@ div#carousel-image-wrapper{
 img#carousel-image{
 	height:400px;
 }
+
+#get-directions-button{
+  position: absolute;
+  right: 10px;
+  padding: 5px 5px 5px 5px;
+}

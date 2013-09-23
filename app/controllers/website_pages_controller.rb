@@ -5,13 +5,13 @@ class WebsitePagesController < ApplicationController
   def about
   end
 
-  def drug_treatment
+  def full_treatment
   end
 
-  def weight_loss
+  def oral_care
   end
 
-  def immigration_physicals
+  def cosmetic_dentistry
   end
 
   def contact
