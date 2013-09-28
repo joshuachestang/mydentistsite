@@ -24,5 +24,25 @@ Things you may want to cover:
 * ...
 
 
+Office Hours
+Accept All Insurance
+Credit Cards
+
+BCBS = PPO
+DELTA = PPO
+METLIFE = PPO
+AETNA = PPO
+GUARDIAN = TRADITIONAL
+UNITED CONCORDIA = PPO
+DENTEMAX = PPO 
+MEDICAID
+CIGNA = PPO
+HUMANA = PPO
+
+
+
+#1867A4	#2E5674	#063961	#78BBEF	#BBD9EF
+
+
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.

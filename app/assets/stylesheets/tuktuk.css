@@ -68,11 +68,11 @@
 .flexbox > .order_8{-webkit-box-ordinal-group:8;-moz-box-ordinal-group:8;-ms-box-ordinal-group:8;-o-box-ordinal-group:8;box-ordinal-group:8}
 .flexbox > .order_9{-webkit-box-ordinal-group:9;-moz-box-ordinal-group:9;-ms-box-ordinal-group:9;-o-box-ordinal-group:9;box-ordinal-group:9}
 
-h1,h2,h3,h4,h5,h6{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;color: black;}
 h1{font-size:2.6em}
 h2{font-size:2.2em}
 h3{font-size:1.8em}
-h4{font-size:1.6em}
+h4{font-size:1.6em;color: #1867A4;}
 h5{font-size:1.3em}
 h6{font-size:1em}
 .text.thin{font-weight:200}
