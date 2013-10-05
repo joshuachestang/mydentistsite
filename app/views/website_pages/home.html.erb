@@ -1,68 +1,56 @@
 
 
-<!-- <div class="carousel" data-transition="slide"> -->
-    <!-- <div> -->
-       <!-- <img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" alt="" /> -->
-    <!-- </div> -->
-    <!-- <div> -->
-        <!-- <img src="http://static.flickr.com/70/229228324_08223b70fa_s.jpg" width="75" height="75" alt="" /> -->
-    <!-- </div> -->
-<!-- </div> -->
-
-
-<section class="padding-bottom padding-top bck theme features">
+<section class="features">
         <div class="row text center book">
+
             <div class="column_12">
-                <h1 class="color default padding-bottom">Welcome to My Dentist & Associates</h1>
+                <h1 class="color default padding-bottom"></h1>
                 
-                    <div id="myCarousel" class="carousel slide">
-                      <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                      </ol>
-                      <!-- Carousel items -->
-                      <div class="carousel-inner">
-                        <div id="carousel-image-wrapper" class="active item"><%= image_tag("image-test-1.jpg", :class => "column_12", :id => "carousel-image") %></div>
-                        <div id="carousel-image-wrapper" class="item"><%= image_tag("image-test-2.jpg", :class => "column_12", :id => "carousel-image") %></div>
-                        <div id="carousel-image-wrapper" class="item"><%= image_tag("image-test-3.jpg", :class => "column_12", :id => "carousel-image") %></div>
-                      </div>
-                      <!-- Carousel nav -->
-                      <!-- <a class="carousel-control-2 left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                      <a class="carousel-control-2 right" href="#myCarousel" data-slide="next">&rsaquo;</a> -->
-                    </div>
-                    <strong>Not Lorem ipsum dolor </strong> lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum nisl sit amet ante placerat adipiscing. 
+                    <h2 id="welcome-message" class="hide-phone">Welcome to My Dentists &amp; Associates</h2>
+                    <h4 id="welcome-message" class="show-phone">Welcome to My Dentists &amp; Associates</h4>
+                    <strong class="large">Chicago, IL</strong><br />
+                    <strong class="large">Personalized Dentistry for You and Your Family.</strong> 
                 
             </div>
         </div>
+
+        <script type="text/javascript">
+                         $.backstretch([
+                            "<%= asset_path 'black-family.jpg'%>",
+                            "<%= asset_path 'happy-black-person.jpg'%>",
+                            "<%= asset_path 'happy-black-family-2.jpg'%>"    
+                          ], {duration: 4000, fade: 2000});
+                    </script>
 <br>
-        <div class="row text center normal margin-top">
+        <div class="text center bck theme margin-top padding">
+        <div class="row padding-bottom padding-top">
         	 <div class="column_4">
-            	<%= link_to  cosmetic_dentistry_path do %>
-	                <h1 class="icon food"></h1>
-	                <h4 class="text color white">Cosmetic Dentistry</h4>
+            	<%= link_to cosmetic_dentistry_path do %>
+	                <h1 class="icon-smile"></h1>
+	                <h4 class="text color black">Cosmetic Dentistry</h4>
                 <% end %>
                 <br>
-		                <p class="text normal">Ultrices vitae semper at, bibendum non ipsum. Quisque neque enim, vestibulum id convallis ac, semper blandit neque.</p>
+		                <p class="text normal">The development of advanced cosmetic dentistry techniques has enabled dentists to work wonders for patients’ smiles by treating common aesthetic issues such as misaligned, discolored, crooked, or broken teeth.</p>
             </div>
 
             <div class="column_4">
-                <%= link_to  oral_care_path do %>
-                	<h1 class="icon group"></h1>
-                	<h4 class="text color white">Long-term Oral Care</h4>
+                <%= link_to oral_care_path do %>
+                	<h1 class="icon-plus-sign-alt"></h1>
+                	<h4 class="text color black">Long-term Oral Care</h4>
             	<% end %>
             	<br>
-		                <p class="text normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum nisl sit amet ante placerat adipiscing.</p>
+		                <p class="text normal">Good oral health involves more than just brushing. My Dentists & Assoc. offers a way to put you on the right path to a healthy smile for the rest of your life.</p>
             </div>
 
             <div class="column_4">
-            	<%= link_to  treatment_plans_path do %>
-	                <h1 class="icon flag"></h1>
-	                <h4 class="text color white">Comprehensive Full Treatment</h4>
+            	<%= link_to treatment_plans_path do %>
+	                <h1 class="icon-tablet"></h1>
+	                <h4 class="text color black">Comprehensive Full Treatment</h4>
                 <% end %>
                 <br>
-		                <p class="text normal">Vivamus tristique pretium diam, non placerat urna gravida in. Quisque quis tellus aliquet, semper metus in, eleifend nibh. </p>
+                    <p class="text normal"> My Dentists offers a full list of treatment options from fillings, crowns, bridges, implant restorations, dentures, limited endodontics (root canals), periodontics (treatment of gum disease), and oral pathology consultations.</p>
             </div>
+        </div>
         </div>
     </section>
 
@@ -70,8 +58,8 @@
     <section class="padding bck dark">
         <div class="row text center book margin-bottom">
             <div class="column_10 offset_1">
-                <h1 class="color theme">Located in Chicago, IL</h1>
-                <h3> Yorem ipsum dolor sit amet  <span class="text normal color white">placerat adipiscing. </span>
+                <h1 class="color theme">Located at:<br /> 2555 W. 79th Street <br /> Chicago, IL</h1>
+                <h3>Get in contact with us <span class="text normal color white">right now. </span>
                 </h3>
             </div>
         </div>
