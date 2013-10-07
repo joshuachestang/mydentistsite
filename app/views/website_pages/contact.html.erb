@@ -1,3 +1,5 @@
+<% set_meta_tags :site => 'My Dentist and Associates', :title => 'Contact' %>
+<% set_meta_tags :description => "My Dentist and Associates is located at 2555 W. 79th Street in Chicago, IL. Get in contact with us today." %>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script type="text/javascript">
   $(document).ready(function() {
@@ -13,14 +15,8 @@
     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'Calumet City Office'
+        title: 'My Dentist Chicago Office'
     });
-
-    var marker2 = new google.maps.Marker({
-    	position: myLatlng2,
-    	map: map,
-    	title: 'Ottawa Office'
-    })
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);

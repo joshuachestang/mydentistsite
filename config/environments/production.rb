@@ -35,7 +35,15 @@ Ghwebsite::Application.configure do
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
 
-  # config.mandrill_mailer.default_url_options = { :host => 'localhost:3000' }
+  ActionMailer::Base.smtp_settings = {
+    :port =>           '587',
+    :address =>        'smtp.mandrillapp.com',
+    :user_name =>      ENV['MANDRILL_USERNAME'],
+    :password =>       ENV['MANDRILL_APIKEY'],
+    :domain =>         'mydentistchicago.com',
+    :authentication => :plain
+  }
+  ActionMailer::Base.delivery_method = :smtp
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
@@ -79,4 +87,8 @@ Ghwebsite::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+
+  ENV['MANDRILL_USERNAME'] = 'app18275817@heroku.com'
+  ENV['MANDRILL_APIKEY'] = 'HCsY4vjt5GJoLcLGpbxrKQ'
 end
