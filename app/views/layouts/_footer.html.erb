@@ -13,7 +13,7 @@
             <div class="text right">
                 <form action="http://maps.google.com/maps" method="get" target="_blank"><input type="text" placeholder="Enter your starting address" name="saddr" /><br />
                 <input type="hidden" name="daddr" value="2555 W 79th Street, Chicago IL" />
-                <input type="submit" value="Get Directions" class="button tiny anchor" style="font-size:1.250em; line-height:0.5em;" />
+                <input type="submit" value="Get Directions" class="button large anchor" style="font-size:1.250em; line-height:0.5em;" />
                 </form>
             </div>
           </div>
@@ -21,8 +21,8 @@
         <br />
         <div class="row">
         <div class="text align center">
-             <%= link_to image_tag('angies-list.png'), "http://www.angieslist.com/companylist/chicago/dentists.htm?cid=badge" %>
-             <%= link_to image_tag('yelp-badge.png', :style => "padding-bottom:16px;"), "http://www.yelp.com/biz/my-dentist-and-associates-chicago" %>
+             <%= link_to image_tag('angies-list.png'), "http://www.angieslist.com/companylist/chicago/dentists.htm?cid=badge", :target => "_blank" %>
+             <%= link_to image_tag('yelp-badge.png', :style => "padding-bottom:16px;"), "http://www.yelp.com/biz/my-dentist-and-associates-chicago", :target => "_blank" %>
         </div>
 
     </div>
