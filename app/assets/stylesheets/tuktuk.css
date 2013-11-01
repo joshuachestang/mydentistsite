@@ -17,6 +17,15 @@
 	clear: both;
 }
 
+
+
+#social-deals{
+    background-color: white;
+		font-weight: bold;
+    opacity: 0.8;
+    padding-top: 0px;
+}
+
 #family-care-header{
 	background-image: url('black-fam-stretched.jpg');
 	margin-left:0px;
