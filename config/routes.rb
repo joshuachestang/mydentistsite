@@ -4,9 +4,9 @@ Ghwebsite::Application.routes.draw do
 
   get "/home" => "website_pages#home"
   get "/about" => "website_pages#about"
-  get "/cosmetic_dentistry" => "website_pages#cosmetic_dentistry"
-  get "/oral_care" => "website_pages#oral_care"
-  get "/treatment_plans" => "website_pages#full_treatment"
+  get "/cosmetic-dentistry" => "website_pages#cosmetic_dentistry", :as => "cosmetic_dentistry"
+  get "/oral-care" => "website_pages#oral_care", :as => "oral_care"
+  get "/treatment-plans" => "website_pages#full_treatment", :as => "treatment_plans"
   get "/contact" => "website_pages#contact"
 
 
