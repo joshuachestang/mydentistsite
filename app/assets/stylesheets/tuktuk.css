@@ -17,6 +17,19 @@
 	clear: both;
 }
 
+.white{
+	color:white;
+}
+
+.go{
+	background-color: green;
+}
+
+div#current-status{
+	background-color: aliceblue;
+	font-size: 1em;
+	font-weight: bold;
+}
 
 #social-deals{
     background-color: white;
