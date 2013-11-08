@@ -13,6 +13,7 @@
 <body>
 
 
+<div id="head">
 <%= render "layouts/header" %>
 <% if flash[:notice] %>
   <p id="flash_notice" class="messages notice"><%= flash[:notice] %></p>
@@ -33,6 +34,9 @@
 <% flash[:alert] = flash[:alert] = flash[:alert] = nil %>
 <%#= render 'layouts/social_deals' %>
 <%= render 'layouts/open_closed_status' %>
+
+</div>
+
 <%= yield %>
 
 
@@ -42,4 +46,8 @@
 <%= render "layouts/footer" %>
 </html>
 
-
+<script>
+    $(document).ready(function () {
+        $('div#head').headshrinker({"shrinkMenu": false, "shrinkBy" : 8});
+    });
+</script>
