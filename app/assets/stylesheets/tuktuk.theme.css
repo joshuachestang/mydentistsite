@@ -5,7 +5,7 @@ body:not(.color):not(.dark) a:not(.button):hover,body:not(.color):not(.dark) a:n
 body hr{margin:15px 0;background:#ecf0f1;background-color:rgba(0,0,0,0.1)}
 body .radius{-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;border-radius:4px}
 body nav[data-tuktuk=menu] > a{-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;}
-body nav[data-tuktuk=menu] > a:hover{background-color: #063961;}
+body nav[data-tuktuk=menu] > a:hover{background-color: #063961; -webkit-transition: background-color 0.5s linear;}
 body nav[data-tuktuk=menu] > a.active{color:#34495e;background-color:rgba(0,0,0,0.1);}
 body nav[data-tuktuk=menu] > a.active .icon{color:#1abc9c}
 body nav[data-tuktuk=menu] > a:not(.active):not(:hover) > .icon,body nav[data-tuktuk=menu] > a small{opacity:.6;font-weight:400}
