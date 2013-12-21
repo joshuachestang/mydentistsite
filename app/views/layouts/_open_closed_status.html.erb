@@ -1,9 +1,9 @@
 <div id="current-status">
 	<div class="text align center">
 	<% if open_right_now_weekday? || open_right_now_saturday? %>
-        <span>We're open right now <%= link_to "Give us a call!", "tel:7734341515", :class => "button tiny", :style => "background-color:rgb(29, 155, 61);" %></span>
+        <span>Our office is open right now <%= link_to "Give us a call!", "tel:7734341515", :class => "button tiny", :style => "background-color:rgb(29, 155, 61);" %></span>
     <% else %>
-        <span>We're closed right now, but you can still <%= link_to "send us a message.", contact_path, :class => "button tiny", :style => "background-color:rgb(126, 121, 124);" %></span>
+        <span>Our office is closed right now, but you can still <%= link_to "send us a message.", contact_path, :class => "button tiny", :style => "background-color:rgb(126, 121, 124);" %></span>
     <% end %>
 	</div>
 </div>
